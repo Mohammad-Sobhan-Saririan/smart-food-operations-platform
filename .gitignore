@@ -1,0 +1,47 @@
+# Environment / credentials
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*service-account*.json
+*credentials*.json
+
+# Dependencies / builds
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+dist/
+build/
+coverage/
+
+# Runtime data
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.log
+logs/
+Backend/images/*
+!Backend/images/.gitkeep
+uploads/
+**/uploads/
+
+# OS / editor / cache
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.tmp
+*.temp
+.cache/
+**/.cache/
+
+# Archives and generated artifacts
+*.tgz
+*.zip
+
+# TypeScript incremental state
+*.tsbuildinfo

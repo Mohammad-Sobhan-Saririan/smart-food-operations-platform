@@ -1,0 +1,23 @@
+{
+  "name": "smart-food-operations-platform",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "install:all": "npm install --prefix Backend && npm install --prefix Frontend/cafe-pwa",
+    "seed": "npm run seed --prefix Backend",
+    "test": "npm test --prefix Backend",
+    "check:backend": "npm run check --prefix Backend",
+    "check:frontend": "npm run check --prefix Frontend/cafe-pwa",
+    "dev:backend": "npm run dev --prefix Backend",
+    "dev:frontend": "npm run dev --prefix Frontend/cafe-pwa",
+    "build:frontend": "npm run build --prefix Frontend/cafe-pwa",
+    "verify": "npm run test && npm run check:backend && npm run check:frontend && npm run build:frontend",
+    "audit:backend": "npm audit --omit=dev --prefix Backend",
+    "audit:frontend": "npm audit --omit=dev --prefix Frontend/cafe-pwa",
+    "audit:prod": "npm run audit:backend && npm run audit:frontend"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
