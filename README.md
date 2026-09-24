@@ -13,9 +13,46 @@ Smart Food Operations combines two operational workflows in one application:
 
 The core demo runs entirely locally with SQLite and synthetic accounts. LDAP/Active Directory, Firebase push notifications, and LLM-assisted analytics are optional integrations and are disabled by default.
 
-## Screenshots
 
-No screenshots from the original organizational deployment are included. Capture public screenshots from the synthetic demo only. See [`docs/screenshots/README.md`](docs/screenshots/README.md).
+
+## Product Tour
+
+### Cafe Ordering
+
+Employees can browse the cafe menu, add products to their cart, select a delivery location, and place orders through the responsive ordering interface.
+
+![Cafe ordering interface](docs/screenshots/01-cafe-menu.png)
+
+### Order Checkout
+
+The checkout flow supports quantity updates, delivery-floor selection, order notes, and server-side validated ordering.
+
+![Cart and order flow](docs/screenshots/02-cart-order-flow.png)
+
+### Barista Operations
+
+Baristas get an operational view of pending orders with customer, delivery, item, and status information.
+
+![Barista active orders](docs/screenshots/03-barista-active-orders.png)
+
+### Restaurant Management
+
+Managers can configure weekly meal availability and manage restaurant operations across locations.
+
+![Weekly menu management](docs/screenshots/07-weekly-menu-management.png)
+
+### LLM-Assisted Reporting
+
+Administrators can save and rerun natural-language analytics requests backed by read-only SQL reporting.
+
+![Smart reporting](docs/screenshots/06-smart-reporting.png)
+
+### Administration
+
+The administration workspace provides access to users, orders, credits, restaurant operations, reporting, and floor management.
+
+![Administration dashboard](docs/screenshots/05-admin-dashboard.png)
+
 
 ## Key Engineering Features
 
